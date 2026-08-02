@@ -1,0 +1,15 @@
+# Ignorer les fichiers générés par GitHub Actions et les hooks SQLite3
+.dart_tool/hooks_runner/sqlite3/
+.dart_tool/hooks_runner/shared/sqlite3/
+.pub-cache/
+android/.gradle/
+android/.kotlin/
+build/
+.ipr
+.iml
+.iws
+.idea/
+.DS_Store
+.env
+.pub
+/local.properties

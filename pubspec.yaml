@@ -1,0 +1,69 @@
+## ============================================================
+## pubspec.yaml – Configuration du projet MediHub
+## Auteurs : Aïssa Thioye, Modou Sylla – UGB L3 Info 2026
+## ============================================================
+
+name: medihub
+description: >
+  MediHub – Système de suivi médical des patients avec carnet numérique.
+  Application Flutter 100% hors ligne. SQLite. Provider.
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # ── Base de données locale ──────────────────────────────
+  sqflite: ^2.2.0+1
+  sqlite3: ^1.10.0          # Interface SQLite pour Flutter
+  path: ^1.9.0              # Manipulation des chemins de fichiers
+
+  # ── Gestion d'état ──────────────────────────────────────
+  provider: ^6.1.2          # ChangeNotifier – état réactif officiel Flutter
+
+  # ── Notifications locales ───────────────────────────────
+  flutter_local_notifications: ^17.2.3
+  timezone: ^0.9.4
+
+  # ── Préférences locales ─────────────────────────────────
+  shared_preferences: ^2.2.3
+
+  # ── Sécurité ────────────────────────────────────────────
+  crypto: ^3.0.3
+
+  # ── Système de fichiers ─────────────────────────────────
+  path_provider: ^2.1.3
+
+  # ── Internationalisation ────────────────────────────────
+  intl: ^0.20.2
+
+  # ── Interface graphique ─────────────────────────────────
+  google_fonts: ^6.2.1
+
+  # ── Recherche avec accents ──────────────────────────────
+  diacritic: ^0.1.4
+
+  # ── Permissions ─────────────────────────────────────────
+  permission_handler: ^11.3.1
+
+  # ── Icônes médicaux ─────────────────────────────────────
+  font_awesome_flutter: ^10.7.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.4.9
+  sqflite_common_ffi: ^2.2.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
